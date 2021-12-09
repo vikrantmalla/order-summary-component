@@ -1,0 +1,30 @@
+/*Primary*/
+
+$ColorPaleblue: hsl(225, 100%, 94%);
+$ColorBrightblue: hsl(245, 75%, 52%);
+
+/*Neutral*/
+
+$ColorVerypaleblue: hsl(225, 100%, 98%);
+$ColorDesaturatedblue: hsl(224, 23%, 55%);
+$ColorDarkblue: hsl(223, 47%, 23%);
+
+/*Mixin*/
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+h1,
+h2 {
+    color: $ColorDarkblue;
+    font-weight: 900;
+}
+
+p {
+    font-size: 400;
+    color: $ColorDesaturatedblue;
+}
